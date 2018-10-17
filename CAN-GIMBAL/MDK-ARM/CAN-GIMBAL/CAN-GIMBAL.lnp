@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp
+"can-gimbal\startup_stm32f427xx.o"
+"can-gimbal\main.o"
+"can-gimbal\stm32f4xx_it.o"
+"can-gimbal\stm32f4xx_hal_msp.o"
+"can-gimbal\stm32f4xx_hal_can.o"
+"can-gimbal\stm32f4xx_hal_tim.o"
+"can-gimbal\stm32f4xx_hal_tim_ex.o"
+"can-gimbal\stm32f4xx_hal_rcc.o"
+"can-gimbal\stm32f4xx_hal_rcc_ex.o"
+"can-gimbal\stm32f4xx_hal_flash.o"
+"can-gimbal\stm32f4xx_hal_flash_ex.o"
+"can-gimbal\stm32f4xx_hal_flash_ramfunc.o"
+"can-gimbal\stm32f4xx_hal_gpio.o"
+"can-gimbal\stm32f4xx_hal_dma_ex.o"
+"can-gimbal\stm32f4xx_hal_dma.o"
+"can-gimbal\stm32f4xx_hal_pwr.o"
+"can-gimbal\stm32f4xx_hal_pwr_ex.o"
+"can-gimbal\stm32f4xx_hal_cortex.o"
+"can-gimbal\stm32f4xx_hal.o"
+"can-gimbal\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "CAN-GIMBAL\CAN-GIMBAL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "CAN-GIMBAL.map" -o CAN-GIMBAL\CAN-GIMBAL.axf
